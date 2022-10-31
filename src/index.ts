@@ -6,6 +6,3 @@ import { IntentOptions } from "./config/IntentOptions";
     const BOT = new Client({intents: IntentOptions});
     await BOT.login(process.env.BOT_TOKEN);
 })
-
-
-
