@@ -11,6 +11,6 @@ import { GatewayIntentBits } from "discord.js";
  * https://discord.com/developers/docs/topics/gateway#list-of-intents
  */
 
-export const IntentOptions = [
+export const IntentOptions : GatewayIntentBits[] = [
     GatewayIntentBits.Guilds,
 ];
