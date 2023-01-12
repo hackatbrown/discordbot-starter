@@ -9,7 +9,9 @@ import { ICommand } from "../interfaces/ICommand";
  * care of identifying which command a user sent, and running the appropriate code.
  */
 export const onInteraction = async (interaction : Interaction) => {
+    console.log("does register interaction");
     if (interaction.isCommand()) {
+        console.log("reaches command condition");
         handleCommand(interaction);
     }
 }

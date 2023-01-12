@@ -6,10 +6,10 @@ const pingCommand : ICommand = {
         .setName("ping")
         .setDescription("A basic ping command, meant to check that the bot works properly!"),
     
-    execute: async (interaction) => {
-        interaction.reply("pong!")
-    }
-}
+    async execute(interaction) {
+        await interaction.reply("pong!");
+    },
+};
 
 module.exports = {
     command: pingCommand,
