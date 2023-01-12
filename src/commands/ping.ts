@@ -1,4 +1,4 @@
-import { CommandInteraction, Interaction, SlashCommandBuilder } from "discord.js";
+import { SlashCommandBuilder } from "discord.js";
 import { ICommand } from "../interfaces/ICommand";
 
 const pingCommand : ICommand = {
