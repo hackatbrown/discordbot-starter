@@ -6,7 +6,6 @@ import { onInteraction } from "./handlers/onInteraction";
 (async () => {
     // We create the bot object, and login to Discord's servers with the bot token provided
     // in .env.
-    //const BOT = new Client({intents: IntentOptions});
     const BOT = new Client({intents: [GatewayIntentBits.Guilds]})
     await BOT.login(process.env.BOT_TOKEN);
 
@@ -20,9 +19,6 @@ import { onInteraction } from "./handlers/onInteraction";
 
     // One fundamental interaction corresponds to when a user types a command, which is what
     // we're handling currently in the onInteraction handler we started writing for you. 
-    //BOT.on("interactionCreate", async (interaction) => await onInteraction(interaction));
-    BOT.on("interactionCreate", (interaction : Interaction) => {
-        console.log(interaction);
-    });
+    BOT.on("interactionCreate", async (interaction) => await onInteraction(interaction));
 
 })();

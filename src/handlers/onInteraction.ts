@@ -1,6 +1,8 @@
 import { CommandInteraction, Interaction } from "discord.js";
 import fs from "fs";
+import { resolve } from "path";
 import { ICommand } from "../interfaces/ICommand";
+require("path").resolve;
 
 /**
  * This function corresponds to the main routine that gets run when an interaction
@@ -9,9 +11,7 @@ import { ICommand } from "../interfaces/ICommand";
  * care of identifying which command a user sent, and running the appropriate code.
  */
 export const onInteraction = async (interaction : Interaction) => {
-    console.log("does register interaction");
     if (interaction.isCommand()) {
-        console.log("reaches command condition");
         handleCommand(interaction);
     }
 }
@@ -24,7 +24,7 @@ export const onInteraction = async (interaction : Interaction) => {
  * corresponding to the user's inputted command.
  */
 const handleCommand = (interaction : CommandInteraction) => {
-    const commandFiles : string[] = fs.readdirSync('./commands/').filter(file => file.endsWith(".js"))
+    const commandFiles : string[] = fs.readdirSync('build/commands').filter(file => file.endsWith(".js"))
     
     for (const file of commandFiles){
         const command : ICommand = require(`../commands/${file}`).command;
