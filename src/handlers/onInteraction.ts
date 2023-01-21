@@ -1,8 +1,6 @@
 import { CommandInteraction, Interaction } from "discord.js";
 import fs from "fs";
-import { resolve } from "path";
 import { ICommand } from "../interfaces/ICommand";
-require("path").resolve;
 
 /**
  * This function corresponds to the main routine that gets run when an interaction

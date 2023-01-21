@@ -1,6 +1,5 @@
 // This line imports the Client class, which is going to represent your Discord bot's session.
-import { Client, Interaction, GatewayIntentBits } from "discord.js";
-import { IntentOptions } from "./config/IntentOptions";
+import { Client, GatewayIntentBits } from "discord.js";
 import { onInteraction } from "./handlers/onInteraction";
 
 (async () => {
