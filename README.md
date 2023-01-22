@@ -31,10 +31,28 @@ This boilerplate uses Node.js and the discord.js module, and is written in TypeS
 
 We have included comments in each file we wrote, that explain the purpose of the most fundamental parts of the code. Make sure to read them to better understand how the boilerplate works!
 
-## 2. Generating a Discord Bot Token
+## 2. Adding the bot to your Discord server
+To test your bot and actually use it, you need to create its "profile" and invite it to a Discord server! The amazing [discord.js Guide](https://discordjs.guide/) explains it very well [here](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot). Follow the steps on the page, then continue reading this guide!
+
+Once you have generated a token, head to the `.env` file and paste it after the `BOT_TOKEN=`. Additionally, provide your bot's client ID for the `CLIENT_ID` field. You can find this in the "General Information" section, on the menu to the left in the Discord Developer Portal. 
+
+Finally, head to [this section](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links) to add the bot to your server!
 
 ## 3. Building and Running the Starter Code
+- cd into the `discordbot-starter` folder (or open the directory in your terminal) 
+- Run `npm install` to download all required Node.js packages.
+- Run `npm run build` to build the TypeScript code. This will create a `build` folder, which contains the executable JavaScript code.
+- Finally, run `npm start` to start your bot up! The program should print "Bot is connected to Discord" if everything went well.
 
+After you make any changes to the code, make sure to run `npm run build` and `npm start` again! As you should only be writing code in the `src` folder, this ensures you build it (i.e., "convert" it to JavaScript) in order to run it.
+ 
 ## 4. Creating and Deploying Commands
+// Explain deployCommands first, and check that ping is working.
+// Then explain how to generally write commands.
+
 
 ## 5. Useful Resources
+- The 100 days of code guide (it should also be mentioned as a credit)
+- discord.js documentation
+- discord.js Guide
+- Google, StackOverflow, YouTube - basically various online resources where you can query stuff.
