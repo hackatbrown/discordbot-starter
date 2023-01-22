@@ -8,6 +8,7 @@ The first few steps of building a Discord bot are very generic and can sometimes
 ## 1. Boilerplate Structure
 This boilerplate uses Node.js and the discord.js module, and is written in TypeScript. You can find the folder structure of our starter kit below:
 
+```
 .
 ├── src/
 │   ├── commands/
@@ -26,8 +27,9 @@ This boilerplate uses Node.js and the discord.js module, and is written in TypeS
 ├── package-lock.json
 ├── README.md
 └── tsconfig.json
+```
 
-We have included comments in each file we wrote, that explain the purpose of the most fundamental parts of the code. Make sure to read them to better understand how the boilerplate works.
+We have included comments in each file we wrote, that explain the purpose of the most fundamental parts of the code. Make sure to read them to better understand how the boilerplate works!
 
 ## 2. Generating a Discord Bot Token
 
