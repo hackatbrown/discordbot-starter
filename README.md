@@ -1,7 +1,7 @@
 # Discord Bot Starter Kit
 Welcome to Hack@Brown's Discord Bot starter kit! In this kit, we're providing you with some boilerplate code, as well as a little guide to get started on building your very own bot!
 
-Not only is building a bot a fun and exciting project, but it also teaches valuable skills in programming and automation. Moreover, considering how widely used Discord is, you'll be able to have significant impact and improve Discord users' experience! Additionally, as Discord supports numerous media types (audio, video, text, images, etc.), possibilities are basically infinite!
+Not only is building a bot a fun and exciting project, but it also teaches valuable skills in programming and automation. Moreover, as Discord supports numerous media types (audio, video, text, images, etc.), possibilities are basically infinite!
 
 The first few steps of building a Discord bot are very generic and can sometimes be annoying. But, fear not: we've completed them for you! The boilerplate we're providing has the code for a working Discord bot that is able to respond to a very simple ping slash command.
 
@@ -47,6 +47,7 @@ Finally, head to [this section](https://discordjs.guide/preparations/adding-your
 After you make any changes to the code, make sure to run `npm run build` and `npm start` again! As you should only be writing code in the `src` folder, this ensures you build it (i.e., "convert" it to JavaScript) in order to run it.
  
 ## 4. Creating and Deploying Commands
+### a. Getting the /ping command to work.
 One of the main ways of interacting with a Discord bot is through using slash commands. These commands are comparable to UNIX commands, and instruct the bot to do something. There are many other ways of interacting with a Discord bot, and you can find a 
 list of events your bot can listen for [here](https://discord.js.org/#/docs/discord.js/main/typedef/Events).
 
@@ -57,9 +58,16 @@ However, to make your bot actually receive commands, you must deploy them. Deplo
 - cd into `discordbot-starter`
 - Run `npm run deploy`
 
+The script should say "Successfully reloaded 1 application (/) commands."
+
+Now, head to Discord and open a text channel that the bot has access to. When typing `/ping`, a menu should pop up:
+![screenshot of /ping command](https://i.imgur.com/zlJ8qrN.png)
+
+Clicking the suggestion, and sending the command should have your bot say "pong!". If it does not work, make sure your bot is online!
+### b. Writing a new command
+TBC
 
 ## 5. Useful Resources
-- The 100 days of code guide (it should also be mentioned as a credit)
-- discord.js documentation
-- discord.js Guide
-- Google, StackOverflow, YouTube - basically various online resources where you can query stuff.
+- A great [tutorial by Naomi Carrigan](https://www.freecodecamp.org/news/build-a-100-days-of-code-discord-bot-with-typescript-mongodb-and-discord-js-13/) which helped me write this guide.
+- The absolutely amazing [discord.js Guide](https://discordjs.guide/).
+- [discord.js Official Documentation](https://discord.js.org/#/docs/discord.js/main/general/welcome)

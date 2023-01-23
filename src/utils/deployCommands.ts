@@ -1,3 +1,9 @@
+/**
+ * This code is from the discord.js Guide's "Registering slash commands"
+ * section, which can be found at this URL:
+ * https://discordjs.guide/creating-your-bot/command-deployment.html#command-registration
+ */
+
 const { REST, Routes } = require('discord.js');
 import fs from "fs"
 
