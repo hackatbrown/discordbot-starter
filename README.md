@@ -47,8 +47,15 @@ Finally, head to [this section](https://discordjs.guide/preparations/adding-your
 After you make any changes to the code, make sure to run `npm run build` and `npm start` again! As you should only be writing code in the `src` folder, this ensures you build it (i.e., "convert" it to JavaScript) in order to run it.
  
 ## 4. Creating and Deploying Commands
-// Explain deployCommands first, and check that ping is working.
-// Then explain how to generally write commands.
+One of the main ways of interacting with a Discord bot is through using slash commands. These commands are comparable to UNIX commands, and instruct the bot to do something. There are many other ways of interacting with a Discord bot, and you can find a 
+list of events your bot can listen for [here](https://discord.js.org/#/docs/discord.js/main/typedef/Events).
+
+As commands are a little tedious to setup, we have done so in the boilerplate. Currently, only a single command is functional in the boilerplate (the /ping command).
+
+However, to make your bot actually receive commands, you must deploy them. Deploying means telling Discord servers about your commands: their name, and a description. To do so:
+
+- cd into `discordbot-starter`
+- Run `npm run deploy`
 
 
 ## 5. Useful Resources

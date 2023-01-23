@@ -20,4 +20,8 @@ import { onInteraction } from "./handlers/onInteraction";
     // we're handling currently in the onInteraction handler we started writing for you. 
     BOT.on("interactionCreate", async (interaction) => await onInteraction(interaction));
 
+    // If you want your bot to do something when a message is sent, you could use the "onMessage"
+    // event (BOT.on("onMessage", ...)). There are many different events that your bot can listen
+    // for. You can find a list at this URL:
+    // https://discord.js.org/#/docs/discord.js/main/typedef/Events
 })();
