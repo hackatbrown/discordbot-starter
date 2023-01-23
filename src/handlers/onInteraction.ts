@@ -25,7 +25,7 @@ const handleCommand = (interaction : CommandInteraction) => {
     const commandFiles : string[] = fs.readdirSync('build/commands').filter(file => file.endsWith(".js"))
     
     for (const file of commandFiles){
-        const command : ICommand = require(`../commands/${file}`).command;
+        const command : ICommand = require(`../commands/${file}`);
         if (interaction.commandName === command.data.name){
             command.execute(interaction);
         } 

@@ -11,6 +11,4 @@ const pingCommand : ICommand = {
     },
 };
 
-module.exports = {
-    command: pingCommand,
-}
+module.exports = pingCommand;
