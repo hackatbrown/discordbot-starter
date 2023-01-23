@@ -2,11 +2,12 @@ const { REST, Routes } = require('discord.js');
 import fs from "fs"
 
 // Makes it so that the .env module finds the appropriate .env file.
-require("dotenv").config({ path: '../../.env'})
+require("dotenv").config({ path: './.env'})
 
 const commands = [];
+
 // Grab all the command files from the commands directory you created earlier
-const commandFiles : string[] = fs.readdirSync('../commands').filter(file => file.endsWith(".js"))
+const commandFiles : string[] = fs.readdirSync("./build/commands").filter(file => file.endsWith(".js"))
 
 // Grab the SlashCommandBuilder#toJSON() output of each command's data for deployment
 for (const file of commandFiles) {
