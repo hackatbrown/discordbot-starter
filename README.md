@@ -75,7 +75,7 @@ After that, you should make sure to set your `module.exports` equal to the IComm
 Finally, you must run `npm run deploy` to deploy your new command to Discord's servers, before starting up your bot.
 
 Useful comments can be found in the sample `ping.ts` we provided. 
-This [article from the discord.js Guide](https://discordjs.guide/slash-commands/response-methods.html#ephemeral-responses) is very useful for creating commands.
+This [article from the discord.js Guide](https://discordjs.guide/slash-commands/response-methods.html#ephemeral-responses) is also very useful for creating commands.
 
 ## 5. Useful Resources
 - A great [tutorial by Naomi Carrigan](https://www.freecodecamp.org/news/build-a-100-days-of-code-discord-bot-with-typescript-mongodb-and-discord-js-13/) which helped me write this guide.
