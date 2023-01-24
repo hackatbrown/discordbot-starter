@@ -61,6 +61,7 @@ However, to make your bot actually receive commands, you must deploy them. Deplo
 The script should say "Successfully reloaded 1 application (/) commands."
 
 Now, head to Discord and open a text channel that the bot has access to. When typing `/ping`, a menu should pop up:
+\
 ![screenshot of /ping command](https://i.imgur.com/zlJ8qrN.png)
 
 Clicking the suggestion, and sending the command should have your bot say "pong!". If it does not work, make sure your bot is online!
