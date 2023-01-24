@@ -65,7 +65,16 @@ Now, head to Discord and open a text channel that the bot has access to. When ty
 
 Clicking the suggestion, and sending the command should have your bot say "pong!". If it does not work, make sure your bot is online!
 ### b. Writing a new command
-TBC
+To create a new command, you should first start by creating a new TypeScript file `<command name>.ts` inside of the `src/commands` directory. You should make sure that the name of your file corresponds exactly to the name of the command you want to create.
+
+Then, you must create a JavaScript object, that implements the `ICommand` interface. This interface specifies that your object must have two fields, `data` of type `SlashCommandBuilder`, and an asynchronous `execute` command. The `data` field holds information about the command (its name, and description), while the `execute` function contains the code that should be ran when a user types a comand. That is where you will write all the code for your command.
+
+After that, you should make sure to set your `module.exports` equal to the ICommand object you just created. This ensures that it is accessible from other TypeScript files in the project.
+
+Finally, you must run `npm run deploy` to deploy your new command to Discord's servers, before starting up your bot.
+
+Useful comments can be found in the sample `ping.ts` we provided. 
+This [article from the discord.js Guide](https://discordjs.guide/slash-commands/response-methods.html#ephemeral-responses) is very useful for creating commands.
 
 ## 5. Useful Resources
 - A great [tutorial by Naomi Carrigan](https://www.freecodecamp.org/news/build-a-100-days-of-code-discord-bot-with-typescript-mongodb-and-discord-js-13/) which helped me write this guide.
