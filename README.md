@@ -1,9 +1,15 @@
 # Discord Bot Starter Kit
-Welcome to Hack@Brown's Discord Bot starter kit! In this kit, we're providing you with some boilerplate code, as well as a little guide to get started on building your very own bot!
+Welcome to Hack@Brown's Discord Bot starter kit! Not only is building a bot a fun and exciting project, but it also teaches valuable skills in programming and automation. Moreover, as Discord supports numerous media types (audio, video, text, images, etc.), possibilities are basically infinite!
 
-Not only is building a bot a fun and exciting project, but it also teaches valuable skills in programming and automation. Moreover, as Discord supports numerous media types (audio, video, text, images, etc.), possibilities are basically infinite!
+In this kit, we're providing you with some boilerplate code, as well as a little guide to get started on building your very own bot! We provide steps on how to build an _ultra cool_ bot that responds to a simple ping slash command. We've included some other _ultra cool_ commands, but you can use this as a launchpad for the endless possibilities of your very own discord bot!
 
-The first few steps of building a Discord bot are very generic and can sometimes be annoying. But, fear not: we've completed them for you! The boilerplate we're providing has the code for a working Discord bot that is able to respond to a very simple ping slash command.
+_Table of Contents_
+1. Boilerplate Structure
+2. Adding the Bot to your Discord Server
+3. Building and Running the Starter code
+4. Creating & Deploying Commands
+6. Other _Ultra Cool_ Commands
+7. Useful Resources
 
 ## 1. Boilerplate Structure
 This boilerplate uses Node.js and the discord.js module, and is written in TypeScript. You can find the folder structure of our starter kit below:
@@ -51,9 +57,7 @@ After you make any changes to the code, make sure to run `npm run build` and `np
 One of the main ways of interacting with a Discord bot is through using slash commands. These commands are comparable to UNIX commands, and instruct the bot to do something. There are many other ways of interacting with a Discord bot, and you can find a 
 list of events your bot can listen for [here](https://discord.js.org/#/docs/discord.js/main/typedef/Events).
 
-As commands are a little tedious to setup, we have done so in the boilerplate. Currently, only a single command is functional in the boilerplate (the /ping command).
-
-However, to make your bot actually receive commands, you must deploy them. Deploying means telling Discord servers about your commands: their name, and a description. To do so:
+As commands are a little tedious to setup, we have done so in the boilerplate. Currently, only a single command is functional in the boilerplate (the /ping command). However, to make your bot actually receive commands, you must deploy them. Deploying means telling Discord servers about your commands: their name, and a description. To do so:
 
 - cd into `discordbot-starter`
 - Run `npm run deploy`
@@ -66,18 +70,17 @@ Now, head to Discord and open a text channel that the bot has access to. When ty
 
 Clicking the suggestion, and sending the command should have your bot say "pong!". If it does not work, make sure your bot is online!
 ### b. Writing a new command
-To create a new command, you should first start by creating a new TypeScript file `<command name>.ts` inside of the `src/commands` directory. You should make sure that the name of your file corresponds exactly to the name of the command you want to create.
-
-Then, you must create a JavaScript object, that implements the `ICommand` interface. This interface specifies that your object must have two fields, `data` of type `SlashCommandBuilder`, and an asynchronous `execute` command. The `data` field holds information about the command (its name, and description), while the `execute` function contains the code that should be ran when a user types a comand. That is where you will write all the code for your command.
-
-After that, you should make sure to set your `module.exports` equal to the ICommand object you just created. This ensures that it is accessible from other TypeScript files in the project.
-
-Finally, you must run `npm run deploy` to deploy your new command to Discord's servers, before starting up your bot.
+- Create a new TypeScript file `<command name>.ts` inside of the `src/commands` directory. Make sure the name of your file corresponds exactly to the name of the command you want to create.
+- Create a JavaScript object that ipliments the `ICommand` interface. The interface specifies that your object must have two fields, `data` of type `SlashCommandBuilder`, and an asynchronous `execute` command. The `data` field holds information about the command (its name, and description), while the `execute` function contains the code that should be ran when a user types a comand. That is where you will write all the code for your command.
+- Set your `module.exports` equal to the ICommand object you just created. This ensures that it is accessible from other TypeScript files in the project.
+- Run `npm run deploy` to deploy your new command to Discord's servers, before starting up your bot.
 
 Useful comments can be found in the sample `ping.ts` we provided. 
 This [article from the discord.js Guide](https://discordjs.guide/slash-commands/response-methods.html#ephemeral-responses) is also very useful for creating commands.
 
-## 5. Useful Resources
+## 5. Other _Ultra Cool_ Commands
+
+## 6. Useful Resources
 - A great [tutorial by Naomi Carrigan](https://www.freecodecamp.org/news/build-a-100-days-of-code-discord-bot-with-typescript-mongodb-and-discord-js-13/) which helped me write this guide.
 - The absolutely amazing [discord.js Guide](https://discordjs.guide/).
 - [discord.js Official Documentation](https://discord.js.org/#/docs/discord.js/main/general/welcome)
