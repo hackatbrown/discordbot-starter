@@ -4,8 +4,8 @@ import { randomInt } from "crypto";
 
 const swiftieCommand: ICommand = {
     data: new SlashCommandBuilder()
-        .setName("pingpong")
-        .setDescription("A basic ping-pong command"),
+        .setName("swiftie!")
+        .setDescription("showers you with great musical taste"),
     async execute(interaction) {
         const arrayOfLyrics = ["speak now!", "you belong with me", "shake it off"]
         await interaction.reply(arrayOfLyrics[randomInt(3)]);
