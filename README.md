@@ -79,7 +79,11 @@ Useful comments can be found in the sample `ping.ts` we provided.
 This [article from the discord.js Guide](https://discordjs.guide/slash-commands/response-methods.html#ephemeral-responses) is also very useful for creating commands.
 
 ## 5. Other _Ultra Cool_ Commands
-
+Here are some commands to showcase the endless possibilities of commands for your discord bot
+- /gif: you can search for GIFs!
+- /shrug: appends ¯\_(ツ)_/¯ to the end of your message
+- /tts: text to speech, reads a message out loud
+  
 ## 6. Useful Resources
 - A great [tutorial by Naomi Carrigan](https://www.freecodecamp.org/news/build-a-100-days-of-code-discord-bot-with-typescript-mongodb-and-discord-js-13/) which helped me write this guide.
 - The absolutely amazing [discord.js Guide](https://discordjs.guide/).
