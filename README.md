@@ -80,9 +80,10 @@ This [article from the discord.js Guide](https://discordjs.guide/slash-commands/
 
 ## 5. Other _Ultra Cool_ Commands
 Here are some commands to showcase the endless possibilities of commands for your discord bot
-- /gif: you can search for GIFs!
-- /shrug: appends ¯\_(ツ)_/¯ to the end of your message
-- /tts: text to speech, reads a message out loud
+- /gif: Search for GIFs!
+- /shrug: Appends ¯\_(ツ)_/¯ to the end of your message
+- /tts: Text to speech, reads a message out loud
+- /swiftie: Taylor Swift lyrics at random! Who doesn't love that?
   
 ## 6. Useful Resources
 - A great [tutorial by Naomi Carrigan](https://www.freecodecamp.org/news/build-a-100-days-of-code-discord-bot-with-typescript-mongodb-and-discord-js-13/) which helped me write this guide.
