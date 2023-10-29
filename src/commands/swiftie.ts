@@ -7,7 +7,7 @@ const swiftieCommand: ICommand = {
         .setName("swiftie!")
         .setDescription("showers you with great musical taste"),
     async execute(interaction) {
-        const arrayOfLyrics = ["speak now!", "you belong with me", "shake it off"]
+        const arrayOfLyrics = ["you belong with meeEEeeEE", "shake it off OH OH", "I'm sorry, the old Taylor can't come to the phone right now"]
         await interaction.reply(arrayOfLyrics[randomInt(3)]);
     },
 };
