@@ -40,7 +40,7 @@ We have included comments in each file we wrote, that explain the purpose of the
 ## 2. Adding the bot to your Discord server
 To test your bot and actually use it, you need to create its "profile" and invite it to a Discord server! The amazing [discord.js Guide](https://discordjs.guide/) explains it very well [here](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot). Follow the steps on the page, then continue reading this guide!
 
-Once you have generated a token, head to the `.env` file and paste it after the `BOT_TOKEN=`. Additionally, provide your bot's client ID for the `CLIENT_ID` field. You can find this in the "General Information" section, on the menu to the left in the Discord Developer Portal. 
+Once you have generated a token, head to the `.env` file and paste it after the `BOT_TOKEN=`. Additionally, provide your bot's client ID (listed as APPLICATION ID on the Discord Developer Portal) for the `CLIENT_ID` field. You can find this in the "General Information" section, on the menu to the left in the Discord Developer Portal. 
 
 Finally, head to [this section](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links) to add the bot to your server!
 
