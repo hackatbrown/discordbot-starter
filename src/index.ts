@@ -1,11 +1,12 @@
 // This line imports the Client class, which is going to represent your Discord bot's session.
 import { Client, GatewayIntentBits } from "discord.js";
 import { onInteraction } from "./handlers/onInteraction";
+import { IntentOptions } from "./config/IntentOptions";
 
 (async () => {
     // We create the bot object, and login to Discord's servers with the bot token provided
     // in .env.
-    const BOT = new Client({intents: [GatewayIntentBits.Guilds]})
+    const BOT = new Client({intents: IntentOptions})
     await BOT.login(process.env.BOT_TOKEN);
 
     // The .on() syntax is used when we want the bot to listen to a certain event.
