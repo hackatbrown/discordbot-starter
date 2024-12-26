@@ -1,3 +1,5 @@
+![example-discord-starter-banner](https://github.com/user-attachments/assets/015f3c35-1067-4ec8-99bc-4c3727841e21)
+
 # Discord Bot Starter Kit
 Welcome to Hack@Brown's Discord Bot starter kit! Not only is building a bot a fun and exciting project, but it also teaches valuable skills in programming and automation. Moreover, as Discord supports numerous media types (audio, video, text, images, etc.), possibilities are basically infinite!
 
